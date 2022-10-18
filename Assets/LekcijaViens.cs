@@ -27,18 +27,25 @@ public class LekcijaViens : MonoBehaviour
     {
         // Method1();
         // Method2(); // method call
-        Method3(5); // method3 ( int param = 5)
+        //Method3(5); // method3 ( int param = 5)
         
-        Debug.Log(ReturnSum());
+         //Debug.Log(ReturnSum());
 
-        int returnedSum = ReturnSum();
-        Debug.Log(returnedSum);
+        // int returnedSum = ReturnSum();
+        // Debug.Log(returnedSum);
 
-        int newSum = SumCalc2(1,2);
-        Debug.Log(returnedSum);
+        // int newSum = SumCalc2(1,2);
+        // Debug.Log(returnedSum);
 
-        int newNewSum = newSum + 5;
-        Debug.Log(newNewSum);
+        // int newNewSum = newSum + 5;
+        // Debug.Log(newNewSum);
+        
+        // uzd1();
+        // uzd2("John");
+        uzd3(15, 16);
+        uzd3(5, 165);
+
+        
     }
 
     // method declaration
@@ -100,4 +107,42 @@ public class LekcijaViens : MonoBehaviour
 
         return c;
     }
+
+    private void uzd1()
+    {
+        Debug.Log("welcome Friends!");
+        Debug.Log("Have a nice day!");
+    }
+
+    private void uzd2(string name)
+    {
+        Debug.Log("Welcome friend" + name);
+        Debug.Log("Have a nice day!");
+    }
+    
+    private void uzd3(int a, int b)
+    {
+        int c = a + b;
+        print(c);
+    }
 }
+
+/*
+1. Write a program in C# Sharp to create a user define function.
+---Expected Output :
+Welcome Friends!
+Have a nice day!
+
+2. Write a program in C# Sharp to create a user 
+define function with parameters
+---Test Data : Please input a name : John
+---Expected Output :
+Welcome friend John !
+Have a nice day!
+
+3. Write a program in C# Sharp to create a function 
+for the sum of two numbers.
+--- Test Data : x : 15 y: 16
+--- Expected Output : The sum of two numbers is : 31
+
+*/
