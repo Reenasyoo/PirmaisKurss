@@ -171,6 +171,71 @@ public class LekcijaDivi : MonoBehaviour
             }
         }
     }
+
+    void uzd1(int x, int y)
+    {
+        
+        if ( x % 2 == 0 && y % 2 == 0 || 
+             x % 3 == 0 && y % 3 == 0 )
+        {
+            Debug.Log(x * y);
+        }
+        else
+        {
+            Debug.Log(x + y);
+        }
+    }
+    
+    void uzd2(int x, int y, int z)
+    {
+        if ( x * y > z || 
+             x + y > z)
+        {
+            Debug.Log("true");
+        }
+        else
+        {
+            Debug.Log("false");
+        }
+    }
+    
+    void uzd3(int x)
+    {
+        if (x % 2 == 0)
+        {
+            Debug.Log("even");
+        }
+        else
+        {
+            Debug.Log("odd");
+        }
+    }
 }
 
 // > < >= <= == !=
+
+/*
+1. Divisible by 2 or 3
+Given two integers, write a method that returns their multiplication if they are both divisible by 2 or 3, 
+otherwise returns their sum.
+Expected input and output
+DivisibleBy2Or3(15, 30) → 450
+if (( x % 2) == 0) 
+if(( x % 3) == 0 )
+
+
+2. If greater than third one
+Given an array of 3 integers, write a method that checks if multiplication or sum of two first numbers 
+is greater than third one.
+Expected input and output
+IfGreaterThanThirdOne([2, 7, 12]) → true
+
+
+3. If number is even
+Given an integer, write a method that checks if it is even.
+Expected input and output
+IfNumberIsEven(721) → false
+
+--- if(( x % 2 ) == 0)
+
+*/
