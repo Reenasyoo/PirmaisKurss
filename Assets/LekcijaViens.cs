@@ -42,9 +42,10 @@ public class LekcijaViens : MonoBehaviour
         
         // uzd1();
         // uzd2("John");
-        uzd3(15, 16);
-        uzd3(5, 165);
-
+        // uzd3(15, 16);
+        // uzd3(5, 165);
+        Method3(5);
+        Method3(4,5);
         
     }
 
@@ -74,6 +75,12 @@ public class LekcijaViens : MonoBehaviour
         int a = 1;
 
         int c = a + param;
+        Debug.Log(c);
+    }
+
+    private void Method3(int param, int param2)
+    {
+        int c = param2 + param;
         Debug.Log(c);
     }
 
@@ -146,3 +153,6 @@ for the sum of two numbers.
 --- Expected Output : The sum of two numbers is : 31
 
 */
+
+Raycast(Vector3 origin, Vector3 direction, out RaycastHit hitInfo, float maxDistance, int layerMask, QueryTriggerInteraction queryTriggerInteraction);
+Raycast(Vector3 origin, Vector3 direction, float maxDistance = Mathf.Infinity, int layerMask = DefaultRaycastLayers, QueryTriggerInteraction queryTriggerInteraction = QueryTriggerInteraction.UseGlobal);
